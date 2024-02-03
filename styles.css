@@ -276,3 +276,115 @@ ul li a:hover{
     padding-left: 100px;
     padding-right: 100px;
   }
+
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      height: auto;
+    }
+    .logo {
+      padding-left: 20px;
+      float: none;
+      padding-top: 15px;
+      text-align: center;
+    }
+    .menu {
+      width: 100%;
+      float: none;
+      text-align: center;
+      padding-right: 0;
+      padding-top: 10px;
+    }
+    ul {
+      float: none;
+      margin-top: 10px;
+    }
+    ul li {
+      margin-right: 20px;
+      font-size: 18px;
+    }
+    .home {
+      flex-direction: column;
+    }
+    .content {
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+    }
+    .main_image {
+      float: none;
+      text-align: center;
+      padding-right: 0;
+      margin-top: 20px;
+    }
+    .college_bar .grey_bar {
+      width: 100%;
+      height: auto;
+    }
+    .grey_bar .col_name {
+      padding-left: 20px;
+      float: none;
+      padding-top: 20px;
+      text-align: center;
+    }
+    .grey_bar .col_logo {
+      padding-right: 20px;
+      float: none;
+      padding-top: 20px;
+      text-align: center;
+    }
+    .features {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .features h1 {
+      font-size: 40px;
+    }
+    .flex-container {
+      flex-direction: column;
+      column-gap: 0;
+    }
+    .flex-container > div {
+      font-size: 24px;
+    }
+    .why_content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .why_img {
+      padding-right: 0;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .get_started {
+      width: 100%;
+      height: auto;
+    }
+    .get_started .started_content {
+      padding-top: 50px;
+    }
+    .contact {
+      width: 100%;
+      height: auto;
+    }
+    .contact .contact_content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .logo {
+      font-size: 24px;
+    }
+    ul li {
+      margin-right: 10px;
+      font-size: 16px;
+    }
+    .content h1 {
+      font-size: 50px;
+    }
+    .flex-container > div {
+      font-size: 20px;
+      padding: 10px;
+    }
+  }
