@@ -1,12 +1,11 @@
-
 @font-face {
   font-family: 'Uber Move';
   src: url('UberMove-Bold.eot');
   src: local('UberMoveBold'), local('UberMove-Bold'),
-      url('UberMove-Bold.eot?#iefix') format('embedded-opentype'),
-      url('UberMove-Bold.woff2') format('woff2'),
-      url('UberMove-Bold.woff') format('woff'),
-      url('UberMove-Bold.ttf') format('truetype');
+    url('UberMove-Bold.eot?#iefix') format('embedded-opentype'),
+    url('UberMove-Bold.woff2') format('woff2'),
+    url('UberMove-Bold.woff') format('woff'),
+    url('UberMove-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -16,10 +15,10 @@
   font-family: 'Uber Move';
   src: url('UberMove-Regular.eot');
   src: local('UberMoveRegular'), local('UberMove-Regular'),
-      url('UberMove-Regular.eot?#iefix') format('embedded-opentype'),
-      url('UberMove-Regular.woff2') format('woff2'),
-      url('UberMove-Regular.woff') format('woff'),
-      url('UberMove-Regular.ttf') format('truetype');
+    url('UberMove-Regular.eot?#iefix') format('embedded-opentype'),
+    url('UberMove-Regular.woff2') format('woff2'),
+    url('UberMove-Regular.woff') format('woff'),
+    url('UberMove-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -29,10 +28,10 @@
   font-family: 'Uber Move';
   src: url('UberMove-Light.eot');
   src: local('UberMoveLight'), local('UberMove-Light'),
-      url('UberMove-Light.eot?#iefix') format('embedded-opentype'),
-      url('UberMove-Light.woff2') format('woff2'),
-      url('UberMove-Light.woff') format('woff'),
-      url('UberMove-Light.ttf') format('truetype');
+    url('UberMove-Light.eot?#iefix') format('embedded-opentype'),
+    url('UberMove-Light.woff2') format('woff2'),
+    url('UberMove-Light.woff') format('woff'),
+    url('UberMove-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -42,28 +41,143 @@
   font-family: 'Uber Move';
   src: url('UberMove-Medium.eot');
   src: local('UberMoveMedium'), local('UberMove-Medium'),
-      url('UberMove-Medium.eot?#iefix') format('embedded-opentype'),
-      url('UberMove-Medium.woff2') format('woff2'),
-      url('UberMove-Medium.woff') format('woff'),
-      url('UberMove-Medium.ttf') format('truetype');
+    url('UberMove-Medium.eot?#iefix') format('embedded-opentype'),
+    url('UberMove-Medium.woff2') format('woff2'),
+    url('UberMove-Medium.woff') format('woff'),
+    url('UberMove-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
-*{
-  margin:0;
-  padding:0; 
-  font-family: 'Uber Move' ;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Uber Move';
 }
 
+/* Variables */
 
 :root {
-   --grey: #5e5e5e;
-   --black: #000000;
-   --white: #ffffff;
-   --lightgrey: #f6f6f6 ;
+
+  --black: #000000;
+  --gray: #5e5e5e;
+  --lightgray: #f6f6f6;
+  --white: #ffffff;
+
+  --Title-xl: 64px;
+  --Title-lg: 36px;
+  --Title-md: 32px;
+
+  --Text-md: 24px;
+  --Text-sm: 20px;
+  --Text-xs: 16px;
+
 }
-body { background-color: var(--white);}
 
+/* Color Class */
 
+.black{
+  color: var(--black);
+}
+
+.gray{
+  color: var(--gray);
+}
+
+.lightgray{
+  color: var(--lightgray);
+}
+
+.white{
+  color: var(--white);
+}
+
+/* Font Size and weight Class */
+
+.Title-xl{
+  font-size: var(--Title-xl);
+}
+
+.Title-lg{
+  font-size: var(--Title-lg);
+}
+
+.Title-md{
+  font-size: var(--Title-md);
+}
+
+.Text-md{
+  font-size: var(--Text-md);
+}
+
+.Text-sm{
+  font-size: var(--Text-sm);
+}
+
+.Text-xs{
+  font-size: var(--Text-xs);
+}
+
+.Bold{
+  font-weight: bold;
+}
+
+.Bold-md{
+  font-weight: 500;
+}
+
+/* Other styles */
+
+.TopSection {
+  height: 100dvh;
+  width: 100dvw;
+}
+
+.Navbar {
+  height: 50px;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0px 50px 0px 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.Navlinks {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.Navlinks a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: var(--Text-xs);
+}
+
+.Navbar p {
+  font-size: var(--Text-md);
+  color: var(--white);
+  font-weight: bold;
+}
+
+.LandingContent{
+  height: calc(100dvh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.LandingText{
+  width: 40%;
+}
+
+.LandingImg{
+  width: 30%;
+  height: auto;
+}
