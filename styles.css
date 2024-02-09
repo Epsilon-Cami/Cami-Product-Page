@@ -258,3 +258,96 @@
 .featdesc{
   padding-top: 20px;
 }
+
+.why_cami {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 50px;
+}
+
+.why_content {
+  flex: 1; 
+}
+
+.why_img {
+  flex: 1; 
+}
+
+
+.why_content h3,
+.why_content p {
+  margin: 0;
+  padding: 10px; 
+}
+
+.why_img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.get_started {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-color: var(--lightgrey); 
+  height: 100vh; 
+}
+
+.started_content {
+  text-align: center; 
+}
+
+.started_content h1 {
+  font-size: 24px;
+}
+
+.started_content p {
+  font-size: 18px; 
+}
+
+.started_content h4 {
+  font-size: 16px; 
+}
+
+.started_content button {
+  background-color: var(--lightgrey); 
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px; 
+}
+
+.started_content button a {
+  text-decoration: none;
+  color: var(--black); 
+}
+
+
+.contact {
+  display: flex;
+  background-color: var(--black); 
+  color: var(--white); 
+  padding-bottom: 30px;
+}
+
+.contact_content {
+  padding: 20px;
+  width: 100%; 
+}
+
+.contact_content h2 {
+  font-size: 24px; 
+}
+
+.contact_content p {
+  font-size: 18px; 
+}
+
+.contact_content hr {
+  border: 1px solid var(--white); 
+}
+
+.contact_content h4 {
+  font-size: 16px; 
+}
